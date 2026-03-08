@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WANTED - Code Villain</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:linear-gradient(135deg,#2a2a2a,#1a1a1a);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'Courier New',monospace;
+padding:20px;
+}
+
+.poster{
+max-width:600px;
+background:#fff3e0;
+background-image:
+linear-gradient(#e6d5b8 1px,transparent 1px),
+linear-gradient(90deg,#e6d5b8 1px,transparent 1px);
+background-size:20px 20px;
+border:15px double #8b0000;
+padding:30px;
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
+position:relative;
+}
+
+.poster::before{
+content:"⚠️";
+position:absolute;
+top:-25px;
+left:50%;
+transform:translateX(-50%);
+background:#ffd700;
+font-size:30px;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+border:3px solid #8b0000;
+}
+
+h1{
+text-align:center;
+font-size:60px;
+font-weight:900;
+letter-spacing:8px;
+color:#8b0000;
+margin-bottom:20px;
+font-family:'Impact','Arial Black',sans-serif;
+}
+
+h2{
+text-align:center;
+font-size:30px;
+margin-bottom:20px;
+color:#2a2a2a;
+border-bottom:3px dashed #8b0000;
+padding-bottom:10px;
+}
+
+.image-placeholder{
+width:250px;
+height:250px;
+margin:0 auto 20px;
+border:5px solid #8b0000;
+border-radius:50%;
+overflow:hidden;
+background:#333;
+}
+
+.image-placeholder a{
+display:block;
+width:100%;
+height:100%;
+}
+
+.image-placeholder svg{
+width:100%;
+height:100%;
+cursor:pointer;
+}
+
+.villain-name{
+font-size:40px;
+text-align:center;
+font-weight:bold;
+color:#8b0000;
+text-transform:uppercase;
+margin-bottom:20px;
+background:#000;
+padding:10px;
+letter-spacing:5px;
+}
+
+.reward{
+text-align:center;
+font-size:35px;
+font-weight:bold;
+color:#ffd700;
+margin-bottom:20px;
+background:#000;
+padding:10px;
+border:3px solid #ffd700;
+}
+
+.info{
+border:3px solid #8b0000;
+padding:15px;
+margin-bottom:20px;
+background:rgba(139,0,0,0.1);
+}
+
+.info p{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.wanted-list{
+list-style:none;
+margin:20px 0;
+}
+
+.wanted-list li{
+font-size:18px;
+padding:8px;
+border-bottom:1px solid #8b0000;
+}
+
+.contact{
+text-align:center;
+background:#8b0000;
+color:#fff3e0;
+padding:15px;
+font-size:20px;
+font-weight:bold;
+border-radius:50px;
+margin-top:20px;
+}
+
+.footer{
+text-align:center;
+margin-top:20px;
+font-size:16px;
+font-style:italic;
+color:#666;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="poster">
+
+<h1>WANTED</h1>
+<h2>⚠️ DEAD OR ALIVE ⚠️</h2>
+
+<div class="image-placeholder">
+
+<a href="villain-info.html">
+
+<svg viewBox="0 0 100 100">
+
+<circle cx="50" cy="40" r="20" fill="#666" stroke="#8b0000" stroke-width="3"/>
+<circle cx="40" cy="35" r="3" fill="red"/>
+<circle cx="60" cy="35" r="3" fill="red"/>
+
+<rect x="45" y="45" width="10" height="5" fill="#8b0000"/>
+<rect x="30" y="60" width="40" height="15" fill="#444"/>
+
+<circle cx="50" cy="70" r="8" fill="#8b0000"/>
+
+<text x="45" y="85" fill="#ffd700" font-size="12">BUG</text>
+
+</svg>
+
+</a>
+
+</div>
+
+<div class="villain-name">THE BUG MASTER</div>
+
+<div class="reward">💰 REWARD: $50,000 💰</div>
+
+<div class="info">
+<p><strong>Alias:</strong> Dr. Syntax Error</p>
+<p><strong>Last Seen:</strong> Dark Web - Server Room 404</p>
+<p><strong>Danger Level:</strong> CRITICAL</p>
+</div>
+
+<ul class="wanted-list">
+<li>Injects infinite loops into code</li>
+<li>Creates dangerous computer viruses</li>
+<li>Hacks websites</li>
+<li>Steals browser cookies</li>
+</ul>
+
+<div class="contact">
+📞 Contact: 1-800-CODE-POLICE
+</div>
+
+<div class="footer">
+Approach with caution – dangerous coder
+</div>
+
+</div>
+
+</body>
+</html>
